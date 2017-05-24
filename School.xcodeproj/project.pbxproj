@@ -42,6 +42,10 @@
 		11541C9D1ED01AA2006B8072 /* back_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 11541C9C1ED01AA2006B8072 /* back_btn.png */; };
 		1179250F1EB46B32009C3A86 /* LearningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1179250D1EB46B32009C3A86 /* LearningViewController.m */; };
 		117925101EB46B32009C3A86 /* LearningViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1179250E1EB46B32009C3A86 /* LearningViewController.xib */; };
+		11873FB41ED556EC00FF6EA8 /* AdminToolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11873FB21ED556EC00FF6EA8 /* AdminToolViewController.m */; };
+		11873FB51ED556EC00FF6EA8 /* AdminToolViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11873FB31ED556EC00FF6EA8 /* AdminToolViewController.xib */; };
+		11873FB91ED5802700FF6EA8 /* AdminDetalisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11873FB71ED5802700FF6EA8 /* AdminDetalisViewController.m */; };
+		11873FBA1ED5802700FF6EA8 /* AdminDetalisViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11873FB81ED5802700FF6EA8 /* AdminDetalisViewController.xib */; };
 		1189A4EC1EB0ADAE005B1F52 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1189A4EB1EB0ADAE005B1F52 /* main.m */; };
 		1189A4EF1EB0ADAE005B1F52 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1189A4EE1EB0ADAE005B1F52 /* AppDelegate.m */; };
 		1189A4F21EB0ADAE005B1F52 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1189A4F11EB0ADAE005B1F52 /* ViewController.m */; };
@@ -150,6 +154,12 @@
 		1179250D1EB46B32009C3A86 /* LearningViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearningViewController.m; sourceTree = "<group>"; };
 		1179250E1EB46B32009C3A86 /* LearningViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LearningViewController.xib; sourceTree = "<group>"; };
 		1184CC6E1EC06BB0001B9859 /* School.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = School.entitlements; sourceTree = "<group>"; };
+		11873FB11ED556EC00FF6EA8 /* AdminToolViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdminToolViewController.h; sourceTree = "<group>"; };
+		11873FB21ED556EC00FF6EA8 /* AdminToolViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdminToolViewController.m; sourceTree = "<group>"; };
+		11873FB31ED556EC00FF6EA8 /* AdminToolViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdminToolViewController.xib; sourceTree = "<group>"; };
+		11873FB61ED5802700FF6EA8 /* AdminDetalisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdminDetalisViewController.h; sourceTree = "<group>"; };
+		11873FB71ED5802700FF6EA8 /* AdminDetalisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdminDetalisViewController.m; sourceTree = "<group>"; };
+		11873FB81ED5802700FF6EA8 /* AdminDetalisViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdminDetalisViewController.xib; sourceTree = "<group>"; };
 		1189A4E71EB0ADAE005B1F52 /* School.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = School.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1189A4EB1EB0ADAE005B1F52 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1189A4ED1EB0ADAE005B1F52 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -349,6 +359,12 @@
 				1179250C1EB46B32009C3A86 /* LearningViewController.h */,
 				1179250D1EB46B32009C3A86 /* LearningViewController.m */,
 				1179250E1EB46B32009C3A86 /* LearningViewController.xib */,
+				11873FB11ED556EC00FF6EA8 /* AdminToolViewController.h */,
+				11873FB21ED556EC00FF6EA8 /* AdminToolViewController.m */,
+				11873FB31ED556EC00FF6EA8 /* AdminToolViewController.xib */,
+				11873FB61ED5802700FF6EA8 /* AdminDetalisViewController.h */,
+				11873FB71ED5802700FF6EA8 /* AdminDetalisViewController.m */,
+				11873FB81ED5802700FF6EA8 /* AdminDetalisViewController.xib */,
 				1189A4F31EB0ADAE005B1F52 /* Main.storyboard */,
 				1189A4F61EB0ADAE005B1F52 /* Assets.xcassets */,
 				1189A4F81EB0ADAE005B1F52 /* LaunchScreen.storyboard */,
@@ -597,6 +613,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11472F491EBC3CDB00EEBF4D /* MaterialIcons-Regular.ttf in Resources */,
+				11873FBA1ED5802700FF6EA8 /* AdminDetalisViewController.xib in Resources */,
 				1129AABD1EB9A40100AC9439 /* font-awesome_4-7-0_graduation-cap_48_0_ffffff_none.png in Resources */,
 				1129AAB61EB99C3F00AC9439 /* material-icons_3-0-1_graphic-eq_48_0_404040_none.png in Resources */,
 				11F931741EB30BA400B01394 /* OpenSans-Bold.ttf in Resources */,
@@ -614,6 +631,7 @@
 				11F931851EB3448400B01394 /* send.png in Resources */,
 				11F9316F1EB3035C00B01394 /* ufonts.com_dinneuzeitgrotesk-light.ttf in Resources */,
 				1189A4FA1EB0ADAE005B1F52 /* LaunchScreen.storyboard in Resources */,
+				11873FB51ED556EC00FF6EA8 /* AdminToolViewController.xib in Resources */,
 				1129AABE1EB9A40100AC9439 /* material-icons_3-0-1_camera-alt_48_0_ffffff_none.png in Resources */,
 				1129AAB51EB99C3F00AC9439 /* material-icons_3-0-1_event_48_0_808080_none.png in Resources */,
 				11F9317B1EB30FB200B01394 /* HomeViewController.xib in Resources */,
@@ -673,6 +691,7 @@
 				1189A4F21EB0ADAE005B1F52 /* ViewController.m in Sources */,
 				1189A4EF1EB0ADAE005B1F52 /* AppDelegate.m in Sources */,
 				1189A5251EB0ADE1005B1F52 /* EventViewController.m in Sources */,
+				11873FB91ED5802700FF6EA8 /* AdminDetalisViewController.m in Sources */,
 				1126663E1EB1B1CE00C61804 /* MainViewController.m in Sources */,
 				112666401EB1B1CE00C61804 /* RearViewController.m in Sources */,
 				1189A5201EB0ADD1005B1F52 /* MessageViewController.m in Sources */,
@@ -694,6 +713,7 @@
 				112666441EB1B1D700C61804 /* SWRevealViewController.m in Sources */,
 				11F931821EB31E7100B01394 /* RPFloatingPlaceholderTextField.m in Sources */,
 				112666481EB1B24300C61804 /* MainNavigationController.m in Sources */,
+				11873FB41ED556EC00FF6EA8 /* AdminToolViewController.m in Sources */,
 				11F931701EB3035C00B01394 /* UIFont+FontAwesome.m in Sources */,
 				1189A52F1EB0AE1A005B1F52 /* ActivityViewController.m in Sources */,
 				1189A52A1EB0ADFD005B1F52 /* AttendanceViewController.m in Sources */,

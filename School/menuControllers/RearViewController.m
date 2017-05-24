@@ -157,7 +157,11 @@
 	{
         menuItemImageView.image=[UIImage imageNamed:@"ionicons_2-0-1_android-compass_40_4_404040_none.png"];
         pictureLbl.text = @"\uE87A";
-		menuItemTextLabel.text = @"Getting Started";
+        if ([appDelegate.userRole isEqualToString:@"Teacher"]) {
+		menuItemTextLabel.text = @"Admin Tools";
+        }else{
+            menuItemTextLabel.text = @"Getting Started";
+        }
     }
 	else if (row == 2)
 	{

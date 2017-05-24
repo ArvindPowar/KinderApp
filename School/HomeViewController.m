@@ -167,7 +167,7 @@
         
         activtyLbl=[[UILabel alloc]initWithFrame:CGRectMake(width*3,screenRect.size.height*.90+35,width,25)];
         activtyLbl.textAlignment = NSTextAlignmentCenter;
-        activtyLbl.text=@"LEARNINIG";
+        activtyLbl.text=@"LEARNING";
         activtyLbl.textColor=[UIColor colorWithHexString:appDelegate.textfieldColor];
         [activtyLbl setBackgroundColor:[UIColor clearColor]];
         activtyLbl.font=[UIFont fontWithName:@"Open Sans" size:12.0f];
@@ -879,7 +879,7 @@
         [activityView removeFromSuperview];
         titlelable.text=@"LEARNING";
         appDelegate.tabStr=@"LEARNING";
-        
+        [notificationBtn removeFromSuperview];
         [messageView removeFromSuperview];
         messageView=[[UIView alloc]init];
         messageView.frame=CGRectMake(0,screenRect.size.height*.10,screenRect.size.width,screenRect.size.height*.70);
@@ -1175,20 +1175,21 @@
     logoImg.layer.cornerRadius = logoImg.frame.size.width / 2;
     //[cell.contentView addSubview:logoImg];
     
-    AsyncImageView *studentProfile=[[AsyncImageView alloc] initWithFrame:CGRectMake(screenRect.size.width*.03,screenRect.size.height*.025,screenRect.size.width*.12,screenRect.size.height*.07)];
+    AsyncImageView *studentProfile=[[AsyncImageView alloc] initWithFrame:CGRectMake(screenRect.size.width*.03,screenRect.size.height*.025,screenRect.size.width*.12,screenRect.size.width*.12)];
     [studentProfile setBackgroundColor:[UIColor clearColor]];
-    [studentProfile.layer setMasksToBounds:YES];
-    studentProfile.clipsToBounds=YES;
-    studentProfile.layer.cornerRadius = studentProfile.frame.size.width / 2;
+//    [studentProfile.layer setMasksToBounds:YES];
     studentProfile.backgroundColor=[UIColor colorWithPatternImage:[UIImage imageNamed:@"upload_Picture.png"]];
+    studentProfile.layer.cornerRadius = screenRect.size.width*.06;
+    studentProfile.clipsToBounds=YES;
+    studentProfile.contentMode = UIViewContentModeScaleAspectFill;
     [cell.contentView addSubview:studentProfile];
     
     UILabel *nameLbl;
     if ([appDelegate.tabStr isEqualToString:@"MAIN"]) {
         if ([appDelegate.userRole isEqualToString:@"Teacher"]) {
-            StudentVO *studentvo=[[StudentVO alloc] init];
-            studentvo=[StudentArray objectAtIndex:indexPath.row];
-            [studentProfile loadImageFromURL:[NSURL URLWithString:studentvo.photo]];
+        StudentVO *studentvo=[[StudentVO alloc] init];
+        studentvo=[StudentArray objectAtIndex:indexPath.row];
+        [studentProfile loadImageFromURL:[NSURL URLWithString:studentvo.photo]];
 
 //            NSURL *url = [NSURL URLWithString:studentvo.photo];
 //            NSData *data = [NSData dataWithContentsOfURL:url];

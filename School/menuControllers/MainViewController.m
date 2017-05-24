@@ -15,6 +15,7 @@
 #import "AttendanceViewController.h"
 #import "ActivityViewController.h"
 #import "HomeViewController.h"
+#import "AdminToolViewController.h"
 @interface MainViewController ()<SWRevealViewControllerDelegate>
 
 @end
@@ -107,6 +108,7 @@
     RearViewController *rearViewController = [[RearViewController alloc] init];
     UINavigationController *frontNavigationController;
     HomeViewController *home=[[HomeViewController alloc]initWithNibName:@"HomeViewController" bundle:nil];
+    AdminToolViewController *admin=[[AdminToolViewController alloc]initWithNibName:@"AdminToolViewController" bundle:nil];
 
 //    MyProfileViewController *pvc=[[MyProfileViewController alloc] initWithNibName:@"MyProfileViewController" bundle:nil];
     ViewController *login;
@@ -114,8 +116,12 @@
 
     if(appDelegate.index==0)
         frontNavigationController = [[UINavigationController alloc] initWithRootViewController:home];
-    else if(appDelegate.index==1)
-        frontNavigationController = [[UINavigationController alloc] initWithRootViewController:home];
+    else if(appDelegate.index==1){
+        if ([appDelegate.userRole isEqualToString:@"Teacher"])
+        frontNavigationController = [[UINavigationController alloc] initWithRootViewController:admin];
+        else
+            frontNavigationController = [[UINavigationController alloc] initWithRootViewController:home];
+    }
     else if(appDelegate.index==2)
         frontNavigationController = [[UINavigationController alloc] initWithRootViewController:home];
     else if(appDelegate.index==3)
